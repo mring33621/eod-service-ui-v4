@@ -1,27 +1,15 @@
-# EodServiceUiV4
+# Yet Another EOD Service UI for Browsing Historical Stock Market OHLCV Data
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+## Description:
+- A very simple [Angular](https://angular.io/) front end for [EOD Service](https://github.com/mring33621/eod-service) REST API.
+- Uses the [Angular Router](https://angular.io/api/router) component for switching between multiple 'pages'
+- Uses webpack/angular's built-in proxy to forward requests to the EOD Service API, avoiding CORS issues, in local/dev mode
+- I built this in order to learn a bit about the Angular web development framework
+- Similar to the [React version](https://github.com/mring33621/eod-service-ui-v2) and [Vuejs version](https://github.com/mring33621/eod-service-ui-v3) of the same project, but with Angular
 
-## Development server
+![Example](./example.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## TODO:
+- [ ] Add some styling
+- [ ] Add some graphs
+- [ ] Add a 'Symbol Search' component

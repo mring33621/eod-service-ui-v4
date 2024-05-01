@@ -1,0 +1,38 @@
+<hr>
+<div>
+  <label for="exchange">Exchange:</label>
+  <select id="exchange" #exchangeSelect (change)="onExchangeChange(exchangeSelect.value)">
+    <option value="">Select Exchange</option>
+    <option *ngFor="let exchange of exchanges" [value]="exchange.name">{{ exchange.name }}</option>
+  </select>
+
+  <label for="symbol">Symbol:</label>
+  <select id="symbol" #symbolSelect (change)="onSymbolChange(symbolSelect.value)">
+    <option value="">Select Symbol</option>
+    <option *ngFor="let symbol of symbols" [value]="symbol.symbol">{{ symbol.symbol }}</option>
+  </select>
+
+  <table>
+    <thead>
+    <tr>
+      <th>Date</th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Close</th>
+      <th>Volume</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let point of marketData">
+      <td>{{ point.date }}</td>
+      <td>{{ point.open }}</td>
+      <td>{{ point.high }}</td>
+      <td>{{ point.low }}</td>
+      <td>{{ point.close }}</td>
+      <td>{{ point.volume }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<hr>

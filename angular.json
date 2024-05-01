@@ -58,6 +58,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "proxyConfig": "./src/proxy.conf.json"
+          },
           "configurations": {
             "production": {
               "browserTarget": "eod-service-ui-v4:build:production"
@@ -94,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "1fe8f225-2407-4841-a9a0-aa2ae063e3c0"
   }
 }
